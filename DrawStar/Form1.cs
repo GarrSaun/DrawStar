@@ -22,26 +22,26 @@ namespace DrawStar
         {
             float scale = size / (83 - 1);
 
-            float x1 = (1+x)*scale;
-            float y1 = (34 + y) * scale;
-            float x2 = (33 + x) * scale;
-            float y2 = (33 + y) * scale;
-            float x3 = (43 + x) * scale;
-            float y3 = (1 + y) * scale;
-            float x4 = (53 + x) * scale;
-            float y4 = (33 + y) * scale;
-            float x5 = (83 + x) * scale;
-            float y5 = (34 + y) * scale;
-            float x6 = (60 + x) * scale;
-            float y6 = (54 + y) * scale;
-            float x7 = (70 + x) * scale;
-            float y7 = (84 + y) * scale;
-            float x8 = (44 + x ) * scale;
-            float y8 = (65 + y) * scale;
-            float x9 = (16 + x) * scale;
-            float y9 = (84 + y) * scale;
-            float x10 = (27 + x) * scale;
-            float y10 = (54 + y) * scale;
+            float x1 = 1*scale + x;
+            float y1 = 34 * scale + y;
+            float x2 = 33 * scale + x;
+            float y2 = 33 * scale + y;
+            float x3 = 43 * scale + x;
+            float y3 = 1 * scale + y;
+            float x4 = 53 * scale + x;
+            float y4 = 33 * scale + y;
+            float x5 = 83 * scale + x;
+            float y5 = 34 * scale + y;
+            float x6 = 60 * scale + x;
+            float y6 = 54 * scale + y;
+            float x7 = 70 * scale + x;
+            float y7 = 84 * scale + y;
+            float x8 = 44 * scale + x;
+            float y8 = 65 * scale + y;
+            float x9 = 16 * scale + x;
+            float y9 = 84 * scale + y;
+            float x10 = 27 * scale + x;
+            float y10 = 54 * scale + y;
 
             Graphics formGraphics = this.CreateGraphics();
 
@@ -61,7 +61,7 @@ namespace DrawStar
         {
             Pen drawPen = new Pen(Color.Red, 1);
 
-            DrawStar(drawPen,30, 150, 100);
+            DrawStar(drawPen,50, 100, 10);
         }
     }
 }
